@@ -1,0 +1,29 @@
+{
+    "accs": [
+        {
+            "name": "Main Acc",
+            "token": YOUR TOKEN
+        },
+        {
+            "name": "SECOND ACC",
+            "token": YOUR TOKEN
+        }
+    ],
+    "configs": [
+        {
+            "text": "cool",
+            "emoji_name": "",
+            "emoji_id": ""
+        },
+        {
+            "text": "yikes",
+            "emoji_name": "",
+            "emoji_id": ""
+        },
+        {
+            "text": "im the best",
+            "emoji_name": "",
+            "emoji_id": ""
+        }
+    ]
+}
