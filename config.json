@@ -13,17 +13,20 @@
         {
             "text": "cool",
             "emoji_name": "",
-            "emoji_id": ""
+            "emoji_id": "",
+            "avatar": "PATH TO PIC"
         },
         {
             "text": "yikes",
             "emoji_name": "",
-            "emoji_id": ""
+            "emoji_id": "",
+            "avatar": "PATH TO PIC"
         },
         {
             "text": "im the best",
             "emoji_name": "",
-            "emoji_id": ""
+            "emoji_id": "",
+            "avatar": "PATH TO PIC"
         }
     ]
 }

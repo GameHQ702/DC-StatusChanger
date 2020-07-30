@@ -1,5 +1,6 @@
 import requests
 import json
+import base64
 
 #--------------------
 #--------------------
@@ -84,3 +85,26 @@ else:
     data["custom_status"] = {"text": text}
 
 req = requests.patch('https://discord.com/api/v6/users/@me/settings', headers=headers, json=data)
+
+a = input("Do you want to change your avatar?: (Yes / Everthing else): ")
+
+if ((a == "Yes") or (a == "yes")):
+    pic = json['configs'][con_id]['avatar']
+    print(pic)
+    try:
+        with open(pic, "rb") as imageFile:
+            str = base64.b64encode(imageFile.read()).decode()
+
+        str = 'data:image/png;base64,{}'.format(str)
+        data = {
+            'avatar': str
+        }
+        req = requests.patch('https://discord.com/api/v6/users/@me', headers=headers, json=data)
+        print(req)
+    
+    except Exception as e:
+        print(e)
+        print('No Avatar')
+else:
+    print('OK, no Avatar')
+    exit()
